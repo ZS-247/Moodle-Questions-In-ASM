@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/* ASM doesnt really have arrays and loops and although you can do the
- * equivalent it with a bunch of jumps and labels, it doesn't really comply
+/* ASM doesnt really have arrays or loops and although you can do the
+ * equivalent with a bunch of jumps and labels, it doesn't really comply
  * with the spirit of the assignment which is to loop through an array and
  * print it out. So I'm going to do it in C where we can actually use
  * loops and arrays. I used plenty of calls to c functions in the
@@ -12,7 +12,7 @@ char week[7][10] = {
     "monday", "tuesday",  "wednsday", "thurday",
     "friday", "saturday", "sunday"}; // Array containing the days of the week
 
-void printArray(char week[7][10]); // prototype for the printArray function
+void printArray(char week[7][10]); // prototype for printArray function
 
 int main() {
   // No need for a function to print the array but I'm doing it anyway
@@ -27,7 +27,7 @@ void printArray(char week[7][10]) {
   }
 }
 
-/* In case you still think im cheating by not doing this in asm, here is
+/* In case you still think I'm cheating by not doing this in asm, here is
  * the assembly code produced by the compiler from this program.
  * I think it's pretty clear that this is not the spirit of the assignment.
  */
