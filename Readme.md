@@ -1,11 +1,11 @@
 ## My (horrible) attempt at completing the questions on moodle in x64 assembly
+![screenshot of moodle questions](images/Screenshot1.png) 
 
  Section 14 on moodle contains a collection of problems to be solved in c#. This is my attempt to write solutions for each in x64 assembly language.
-I have tested each program and they should function as intended albeit without any serious error handling or optimization. I am sure this is both
-horrible code and terible practice but at least they run! I compiled on windows with nasm and linked with visual studio's linker. The compiled 
-programs are availible in the directory build but each asm file can be compiled with "nasm -f win64 -o [name.obj] [name.asm] and linked (from the visual studio developer command line or powershell with "link [programname.obj] /defaultlib:ucrt.lib /defaultlib:msvcrt.lib /defaultlib:legacy_stdio_definitions.lib /defaultlib:Kernel32.lib /defaultlib:Shell32.lib /nologo /incremental:no"
+I have tested each program and they should function as intended albeit without any serious error handling or optimization. I am sure this is both horrible code and terible practice but at least they run! I compiled on windows with [nasm](https://www.nasm.us/) and linked with visual studio's linker. The compiled programs are availible in the directory [build](build) but each asm file can be compiled with `nasm -f win64 -o [name.obj] [name.asm]` and linked (from the visual studio developer command line or powershell with `link [programname.obj] /defaultlib:ucrt.lib /defaultlib:msvcrt.lib /defaultlib:legacy_stdio_definitions.lib /defaultlib:Kernel32.lib /defaultlib:Shell32.lib /nologo /incremental:no` The single c file can be compiled with any c compiler that supports c99. I used clang on windows but msvc, gcc, or any other will do.
 
- 
+<img src="images/Screenshot3.png" width=300>
+
 ### Taken from Section 14 on moodle in the Problem Solving Skills for IT 
 
 The programs are numbered according to the problems:
@@ -29,3 +29,4 @@ The programs are numbered according to the problems:
 
 The files are named silly1.asm, silly2.asm, silly3.asm, silly4.asm, and silly5.c respectively.
 
+![second screenshot of moodle questions](images/Screenshot2.png)
